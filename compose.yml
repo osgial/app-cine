@@ -17,8 +17,8 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     container_name: contenedorPhpMyAdmin
     environment:
-    PMA_HOST: db
-    MYSQL_ROOT_PASSWORD: contrasenyaRoot
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: contrasenyaRoot
     ports:
       - "8081:80"
     depends_on:
